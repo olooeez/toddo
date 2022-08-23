@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go 1.18
+      uses: actions/setup-go@v3
+      with:
+        go-version: 1.18
+
+    - name: Fetch all dependecies
+      run: make deps
+
+    - name: Run all tests
+      run: make test
