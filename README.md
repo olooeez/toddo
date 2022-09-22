@@ -21,8 +21,6 @@ A simple CLI todo application inspired by [todo.txt](https://github.com/todotxt/
 go install github.com/lureevar/toddo
 ```
 
-- Or you can install the [package of latest release](https://github.com/lureevar/toddo/releases/latest) in GitHub
-
 ## Usage
 
 - To see how to use todo, type the command below:
